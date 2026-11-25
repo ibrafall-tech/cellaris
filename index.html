@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Cellaris — Dimensionnement LTE</title>
+    <meta name="description" content="Cellaris : planification et dimensionnement de réseaux LTE (bilan de liaison, COST-231 Hata, couverture, capacité, coûts). Conçu par Ibrahima FALL." />
+    <meta name="author" content="Ibrahima FALL" />
+    <meta name="theme-color" content="#070B14" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F4F6FB" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // Applique le thème avant le premier rendu (aucun flash).
+      try {
+        var s = JSON.parse(localStorage.getItem('cellaris') || '{}').state || {};
+        var t = s.theme || 'system';
+        var dark = t === 'dark' || (t === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.classList.toggle('dark', dark);
+      } catch (e) {
+        document.documentElement.classList.toggle('dark', matchMedia('(prefers-color-scheme: dark)').matches);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

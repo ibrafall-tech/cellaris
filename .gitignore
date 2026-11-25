@@ -1,0 +1,7 @@
+node_modules
+dist
+_reverse
+.claude/settings.local.json
+*.log
+_tools
+*.tsbuildinfo
